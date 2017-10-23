@@ -1,0 +1,31 @@
+{
+    "name": "Tinder Bot",
+    "description": "Automates the process of tinder swiping and initial messaging.",
+    "version": "1.0.2",
+    "manifest_version":2,
+    "browser_action": {
+      "default_icon": "icons/32x32.png",
+      "default_popup": "extension.html"
+    },
+    "icons": {
+      "32": "icons/32x32.png",
+      "64": "icons/64x64.png",
+      "128": "icons/128x128.png"
+    },
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+    "content_scripts": [
+        {
+          "matches": ["http://www.tinder.com/*","https://www.tinder.com/*", "http://tinder.com/*", "https://tinder.com/*"],
+          "js": ["thirdParty/jquery.min.js", "content.js"],
+          "css": ["css/style.css"]
+        }
+    ],
+    "background" : {
+        "scripts" : ["background.js"],
+        "persistent": false
+    },
+    "permissions": [
+      "storage",
+      "tabs"
+    ]
+}
