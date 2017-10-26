@@ -1,8 +1,60 @@
 <html>
-    <head>
-        <title>Tinder Bot</title>
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Tinder Bot</title>
+</head>
+
+<body class="popup">
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-3 col-md-6 text-center">
+                <h5>Tinder Bot Settings</h5>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-3 col-md-6">
+                    <form class="">
+                        <div class="form-group">
+                            <label class="form-check-label" id="enable-messaging-label">
+                                <input class="form-check-input" type="checkbox" id="enable-messaging-value"> Enable Messaging
+                                </label>
+                        </div>
+                        <label for="Initial Message">Initial Message</label>
+                        <input type="text" class="form-control" id="initial-message" aria-describedby="initialMessage" placeholder="Heyy">
+                        <small class="form-text text-muted">The message you'd like to send to new matches.</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-md-4 col-md-4 text-center">
+                <button type="submit" id="initSwipe" class="btn btn-success btn-large">Begin Swiping</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="offset-md-2 col-md-8">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-info">Upcoming features include...</li>
+                    <li class="list-group-item">Real work mode: Tinder bot will swipe in plain sight without getting you in trouble.</li>
+                    <li class="list-group-item">Viewing people who have unmatched you.</li>
+                    <li class="list-group-item">Scheduled swiping to swipe at certain times of the day.</li>
+                    <li class="list-group-item">Timed swiping to swipe for a certain amount of time before taking a break.</li>
+                    <li class="list-group-item">Hosted swiping so that you don't have to have Tinder.com open.</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="thirdParty/jquery.min.js" charset="utf-8"></script>
+    <script src="content.js" charset="utf-8"></script>
+    <script src="background.js" charset="utf-8"></script>
+    <script src="popup.js" charset="utf-8"></script>
+
+</body>
+
 </html>

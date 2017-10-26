@@ -15,9 +15,9 @@
     "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
     "content_scripts": [
         {
-          "matches": ["http://www.tinder.com/*","https://www.tinder.com/*", "http://tinder.com/*", "https://tinder.com/*"],
+          "matches": ["http://www.tinder.com/*","https://www.tinder.com/*", "http://tinder.com/*", "https://tinder.com/*", "https://www.gotinder.com/*", "http://www.gotinder.com/*", "https://gotinder.com/*", "http://gotinder.com/*"],
           "js": ["thirdParty/jquery.min.js", "content.js"],
-          "css": ["css/style.css"]
+          "css": ["css/style.css", "css/bootstrap.min.css"]
         }
     ],
     "background" : {
@@ -26,6 +26,7 @@
     },
     "permissions": [
       "storage",
-      "tabs"
+      "tabs",
+      "<all_urls>"
     ]
 }

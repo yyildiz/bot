@@ -1,6 +1,28 @@
-.queue-section .yt-uix-button-icon-wrapper .yt-uix-button-icon-dismissal{
-  background: url('https://s.ytimg.com/yts/imgbin/www-hitchhiker-vfllryam5.webp') no-repeat -298px -217px;
-  width: 9px;
-  height: 9px;
-  margin-left: -4px;
+.tinder_settings {
+    cursor: pointer !important;
+}
+.recCard__img {
+    display: none;
+}
+.messageListItem__avatar img {
+    display: none;
+}
+
+h5 {
+    padding: 0 20px;
+    text-align: center;
+}
+.popup {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-group {
+    margin-top: 20px;
+}
+
+button {
+    cursor: pointer;
 }
